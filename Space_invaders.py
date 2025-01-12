@@ -22,7 +22,7 @@ class Game:
         player_sprite = Player((screen_width / 2, screen_height), screen_width, 5)
         self.player = pygame.sprite.GroupSingle(player_sprite)
 
-        # Health and socre setup
+        # Health and score setup
         self.lives = 3
         self.live_surf = pygame.image.load("player.png").convert_alpha()
         self.live_x_start_position = screen_width - (self.live_surf.get_size()[0] * 2 + 20) #Gives the size of the images(player) and finding its x coords(width)   ### Gives the width of one player life. ###
